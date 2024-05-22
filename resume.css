@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    padding: 20px;
+    border: 2px solid grey;
+    margin: 20px;
+    border-radius: 10px;
+}
+header{
+        text-align: center;
+}
+.title{
+    padding: 10px 0px;
+    margin: 30px 0px ;
+    text-align: center;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+section{
+    display: flex;
+}
+.left{
+    padding: 10px 20px ;
+    width: 50vw;
+    border-right: 1.5px solid black;
+}
+.left h4{
+    padding: 20px 0px;
+}
+.education p, .coursework p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.contact a{
+    text-decoration: none;
+}
+.language{
+    padding: 10px;
+}
+.right{
+    padding: 10px 20px ;
+    width: 50vw;
+}
+.right h4, h5{
+    padding: 10px 0px;
+}
+.right li{
+    font-size: 15px;
+}
+.seperator{
+    height: 1.5px;
+    background-color: grey;
+}
+.left-seperator{
+    height: 5px;
+    background-color: red;
+    display: none;
+}
+@media (max-width:500px) {
+    section{
+        display: block;
+    }
+    .left{
+        width: 90vw;
+        border-right: none;
+    }
+    .right{
+        width: 90vw;
+    }
+    .container{
+        padding: 0px;
+        border: 2px solid grey;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .right li{
+        font-size: 15px;
+    }
+    .left-seperator{
+        display: block;
+    }
+}
